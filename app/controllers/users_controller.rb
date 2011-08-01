@@ -3,7 +3,7 @@ uses_tiny_mce(:options => AppConfig.default_mce_options, :only => [:new, :edit])
   # GET /users
   # GET /users.xml
   def index
-    @users = User.all.paginate(:page =>params[:page], :per_page =>3) 
+    @users = User.all
 
     respond_to do |format|
       format.html # index.html.erb

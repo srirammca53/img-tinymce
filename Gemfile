@@ -8,7 +8,7 @@ gem 'rails', '3.0.9'
 gem 'sqlite3'
 gem 'aws-s3'
 gem 'pg'
-gem 'will_paginate'
+#gem 'will_paginate'
 # Use unicorn as the web server
 # gem 'unicorn'
 
