@@ -1,21 +1,25 @@
 <p id="notice"><%= notice %></p>
+<center>
+<table border=1 bgcolor=black>
+<tr>
+  <td>Name:</td>
+  <td><%= @user.name %><td>
+  </tr>
 
-<p>
-  <b>Name:</b>
-  <%= @user.name %>
-</p>
 
-<p>
-  <b>Mobile:</b>
-  <%= @user.mobile %>
-</p>
+<tr>
+  <td>Mobile:</td>
+  <td><%= @user.mobile %></td>
+</tr>
 
-<p>
-  <b>Address:</b>
-  <%= sanitize(@user.address) %>
-  <%= @user.imagepath %>
-</p>
-
+<tr>
+  <td>Address:</td>
+  <td><%= sanitize(@user.address) %>
+  <%= @user.imagepath %></td>
+</tr>
+</table>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
+</center>
+
